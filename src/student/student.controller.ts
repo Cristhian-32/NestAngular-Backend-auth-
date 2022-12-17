@@ -6,7 +6,7 @@ import { RoleName } from 'src/role/role.enum';
 import { StudentDto } from './dto/student.dto';
 import { StudentService } from './student.service';
 
-@Controller('api/student')
+@Controller('api/students')
 export class StudentController {
 
     constructor( private readonly studentService: StudentService) {}

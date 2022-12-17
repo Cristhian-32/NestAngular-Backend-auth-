@@ -2,7 +2,7 @@ import { Body, Controller, Get, Post, UsePipes, ValidationPipe } from '@nestjs/c
 import { AdviserService } from './adviser.service';
 import { NewAdviserDto } from './dto/new-adviser.dto';
 
-@Controller('api/adviser')
+@Controller('api/auth/adviser')
 export class AdviserController {
 
     constructor(private readonly adviserService: AdviserService) {}

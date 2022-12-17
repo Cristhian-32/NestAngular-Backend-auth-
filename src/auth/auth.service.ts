@@ -51,6 +51,7 @@ export class AuthService {
         if (!passwordOK) return new UnauthorizedException({ message: 'Usuario y/o contraseña incorrectos' });
         const payload: PayloadInterface = {
             id: user.id,
+            name: user.name,
             username: user.username,
             email: user.email,
             roles: user.roles.map(role => role.roleName as RoleName)
